@@ -78,7 +78,7 @@ export class AzureCogSearch<
   }
 
   get baseUrl(): string {
-    return `https://${this._config.name}.search.windows.net/indexes/${this._config.indexName}/docs`;
+    return `https://${this._config.name}.search.azure.us/indexes/${this._config.indexName}/docs`;
   }
 
   async addDocuments(documents: Document<TModel>[]): Promise<string[]> {
@@ -187,7 +187,7 @@ export class AzureCogSearch<
   }
 
   public async ensureIndexIsCreated(): Promise<void> {
-    const url = `https://${this.config.name}.search.windows.net/indexes/${this.config.indexName}?api-version=${this.config.apiVersion}`;
+    const url = `https://${this.config.name}.search.azure.us/indexes/${this.config.indexName}?api-version=${this.config.apiVersion}`;
     try {
       await this.fetcher(url);
     } catch (e) {
@@ -245,7 +245,7 @@ export class AzureCogSearch<
   };
 
   public async createIndex(): Promise<void> {
-    const url = `https://${this.config.name}.search.windows.net/indexes?api-version=${this.config.apiVersion}`;
+    const url = `https://${this.config.name}.search.azure.us/indexes?api-version=${this.config.apiVersion}`;
     await this.fetcher(url, {
       method: "POST",
       body: JSON.stringify(AZURE_SEARCH_INDEX),
