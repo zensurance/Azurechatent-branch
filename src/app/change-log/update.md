@@ -1,6 +1,6 @@
-# Azure Chat Updates
+# ScoopGPT Updates
 
-Below are the updates for the Azure Chat Solution accelerator
+Below are the updates for the ScoopGPT AI assistant
 
 ## 📂 Chat with file
 
