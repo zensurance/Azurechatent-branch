@@ -52,7 +52,7 @@ You can deploy the application using one of the following options:
 
 Click on the appropriate Deploy to Azure button to deploy the Azure resources for the application within an environment suitable for your use case.
 
-[![Deploy to Azure](https://aka.ms/deploytoazuregovbutton)](https://aka.ms/anzappazurechatgpt)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/anzappazurechatgpt)
 
 [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://aka.ms/anzappazurechatgpt)
 
