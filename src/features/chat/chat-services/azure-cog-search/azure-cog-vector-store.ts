@@ -178,11 +178,11 @@ export const embedDocuments = async (
 };
 
 const baseUrl = (): string => {
-  return `https://${process.env.AZURE_SEARCH_NAME}.search.azure.us/indexes`;
+  return `${process.env.AZURE_SEARCH_URL}/indexes`;
 };
 
 const baseIndexUrl = (): string => {
-  return `https://${process.env.AZURE_SEARCH_NAME}.search.azure.us/indexes/${process.env.AZURE_SEARCH_INDEX_NAME}`;
+  return `${process.env.AZURE_SEARCH_URL}/indexes/${process.env.AZURE_SEARCH_INDEX_NAME}`;
 };
 
 const fetcher = async (url: string, init?: RequestInit) => {

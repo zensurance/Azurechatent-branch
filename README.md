@@ -52,9 +52,9 @@ You can deploy the application using one of the following options:
 
 Click on the appropriate Deploy to Azure button to deploy the Azure resources for the application within an environment suitable for your use case.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/anzappazurechatgpt)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FHJFMilMed%2Fscoopgpt%2Fmain%2Finfra%2Fmain.json)
 
-[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fazurechat%2Fmaster%2Fmain%2Finfra%2Fmain.json)
+[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FHJFMilMed%2Fscoopgpt%2Fmain%2Finfra%2Fmain.json)
 
 ## Setup Authentication
 

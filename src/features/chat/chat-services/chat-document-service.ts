@@ -186,7 +186,7 @@ export const UpsertChatDocument = async (
 
 export const ensureSearchIsConfigured = async () => {
   var isSearchConfigured =
-    isNotNullOrEmpty(process.env.AZURE_SEARCH_NAME) &&
+    isNotNullOrEmpty(process.env.AZURE_SEARCH_URL) &&
     isNotNullOrEmpty(process.env.AZURE_SEARCH_API_KEY) &&
     isNotNullOrEmpty(process.env.AZURE_SEARCH_INDEX_NAME) &&
     isNotNullOrEmpty(process.env.AZURE_SEARCH_API_VERSION);
