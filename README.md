@@ -11,15 +11,15 @@
 
 # Introduction
 
-_Azure Chat Solution Accelerator powered by Azure Open AI Service_
+_HJF AI Assistant powered by the Azure Chat Solution Accelerator and Azure Open AI Service_
 
 ![](/images/intro.png)
 
-_Azure Chat Solution Accelerator powered by Azure Open AI Service_ is a solution accelerator that allows organisations to deploy a private chat tenant in their Azure Subscription, with a familiar user experience and the added capabilities of chatting over your data and files.
+_HJF AI Assistant powered by the Azure Chat Solution Accelerator and Azure Open AI Service_ is a fork of the Azure Chat Solution Accelerator that is catered to organizations with strict regulatory requirements. It allows organisations to deploy a private chat tenant in their Azure Government Subscription, with a familiar user experience and the added capabilities of chatting over your data and files.
 
 Benefits are:
 
-1. Private: Deployed in your Azure tenancy, allowing you to isolate it to your Azure tenant.
+1. Private: With the exception of the Azure OpenAI Service, all components are deployed in your Azure Government tenancy, allowing you to isolate it to your Azure tenants.
 
 2. Controlled: Network traffic can be fully isolated to your network and other enterprise grade authentication security features are built in.
 
@@ -50,9 +50,11 @@ You can deploy the application using one of the following options:
 > **Warning**
 > This button will only create Azure resources. You will still need to deploy the application by following the [deploy to Azure section](/docs/4-deploy-to-azure.md) to build and deploy the application using GitHub actions.
 
-Click on the Deploy to Azure button to deploy the Azure resources for the application.
+Click on the appropriate Deploy to Azure button to deploy the Azure resources for the application within an environment suitable for your use case.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/anzappazurechatgpt)
+[![Deploy to Azure](https://aka.ms/deploytoazuregovbutton)](https://aka.ms/anzappazurechatgpt)
+
+[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://aka.ms/anzappazurechatgpt)
 
 ## Setup Authentication
 

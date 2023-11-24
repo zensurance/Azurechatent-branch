@@ -85,6 +85,30 @@ AZURE_AD_CLIENT_SECRET=
 AZURE_AD_TENANT_ID=
 ```
 
+### 🟢 Government Production App Setup
+
+1. Navigate to [Azure Gov AD Apps setup](https://portal.azure.us/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps)
+2. Create a [New Registration](https://portal.azure.us/#view/Microsoft_AAD_RegisteredApps/CreateApplicationBlade/quickStartType~/null/isMSAApp~/false)
+3. Fill in the following details
+
+   ```default
+   Application name: Production
+   Supported account types: Accounts in this organizational directory only
+   Redirect URI Platform: Web
+   Redirect URI: https://YOUR-WEBSITE-NAME.azurewebsites.us/api/auth/callback/azure-ad-gcch
+   ```
+
+> **Note**
+> After completing app setup, ensure your environment variables locally and on Azure App Service are up to date.
+
+```bash
+# Azure AD OAuth app configuration
+
+AZURE_AD_GCCH_CLIENT_ID=
+AZURE_AD_GCCH_CLIENT_SECRET=
+AZURE_AD_GCCH_TENANT_ID=
+```
+
 ## Configure an admin user
 
 The reporting pages in the application are only available to an admin user. To configure the admin user create or update the "ADMIN_EMAIL_ADDRESS" config setting locally and on Azure App Service with the email address of the user who will use reports.
