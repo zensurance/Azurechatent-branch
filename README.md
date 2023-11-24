@@ -54,7 +54,7 @@ Click on the appropriate Deploy to Azure button to deploy the Azure resources fo
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/anzappazurechatgpt)
 
-[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://aka.ms/anzappazurechatgpt)
+[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fazurechat%2Fmaster%2Fmain%2Finfra%2Fmain.json)
 
 ## Setup Authentication
 
