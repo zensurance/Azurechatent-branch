@@ -1,6 +1,6 @@
-# ScoopGPT Updates
+# Zeed AI Updates
 
-Below are the updates for the ScoopGPT AI assistant
+Below are the updates for the Zeed AI AI assistant
 
 ## 📂 Chat with file
 
@@ -12,7 +12,7 @@ Below are the updates for the ScoopGPT AI assistant
 
 ## 🏢 Chat with Enterprise Data
 
-- The chat with enterprise data feature allows users to chat with pre-provisioned data using the Retrieval Augmented Generation pattern. As ScoopGPT is trained, the experience will allow users to ask questions about benefits, internal policies, and other HJF specific information.
+- The chat with enterprise data feature allows users to chat with pre-provisioned data using the Retrieval Augmented Generation pattern. As Zeed AI is trained, the experience will allow users to ask questions about benefits, internal policies, and other HJF specific information.
 
 - You can now see citations within the responses. Simply click on the citation to access the related context.
 
