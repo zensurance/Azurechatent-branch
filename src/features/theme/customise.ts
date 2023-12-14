@@ -1,1 +1,1 @@
-export const AI_NAME = "ScoopGPT";
+export const AI_NAME = "Zeed AI";
