@@ -17,6 +17,8 @@ const CONTEXT_PROMPT = ({
   userQuestion: string;
 }) => {
   return `
+- Given the following extracted parts of a long document, create a final answer. \n
+- If you don't know the answer, just say that you don't know. Don't try to make up an answer and don't include a citation. \n
 - If you know the answer, you must always include a citation at the end of your answer and don't include full stop.\n
 - Use the format for your citation {% citation items=[{name:"filename 1",id:"file id"}, {name:"filename 2",id:"file id"}] /%}\n 
 ----------------\n 
@@ -110,6 +112,9 @@ export const ChatAPIEnterprise = async (props: PromptGPTProps) => {
 };
 
 const findRelevantDocuments = async (query: string, chatThreadId: string) => {
-  const relevantDocuments = await similaritySearchVectorWithScore(query, 10);
+  const relevantDocuments = await similaritySearchVectorWithScore(query, 10, {
+    filter: `user eq '${process.env.AZURE_SEARCH_USER_HASH}'`,
+  });
+
   return relevantDocuments;
 };
