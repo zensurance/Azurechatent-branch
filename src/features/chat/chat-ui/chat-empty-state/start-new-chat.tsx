@@ -18,7 +18,7 @@ export const StartNewChat: FC<Prop> = (props) => {
         </Typography>
         <div className="flex flex-col gap-2">
           <p className="">
-            Welcome to {AI_NAME}. I'm here to help with any inquiries or topics you'd like to explore.
+            Welcome to {AI_NAME}. I'm here to help with any inquiries or topics you would like to explore.
           </p>
           <p>You can start a new chat with me by clicking the button below.</p>
         </div>
