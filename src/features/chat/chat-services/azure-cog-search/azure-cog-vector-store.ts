@@ -269,13 +269,13 @@ const AZURE_SEARCH_INDEX = {
       facetable: false,
       retrievable: true,
       dimensions: 1536,
-      vectorSearchConfiguration: "vectorConfig",
+      vectorSearchConfiguration: "Zeed-ai-vector-algorithm",
     },
   ],
   vectorSearch: {
     algorithmConfigurations: [
       {
-        name: "ZeedAI-Vector-Profile-v1",
+        name: "Zeed-ai-vector-algorithm",
         kind: "hnsw",
       },
     ],
