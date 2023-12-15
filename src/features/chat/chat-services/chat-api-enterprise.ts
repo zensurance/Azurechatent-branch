@@ -118,5 +118,3 @@ const findRelevantDocuments = async (query: string, chatThreadId: string) => {
 
   return relevantDocuments;
 };
-
-console.log(${process.env.AZURE_SEARCH_USER_HASH})
