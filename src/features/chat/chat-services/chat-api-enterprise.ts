@@ -112,9 +112,6 @@ export const ChatAPIEnterprise = async (props: PromptGPTProps) => {
 };
 
 const findRelevantDocuments = async (query: string, chatThreadId: string) => {
-  const relevantDocuments = await similaritySearchVectorWithScore(query, 10, {
-    filter: `user eq '${process.env.AZURE_SEARCH_USER_HASH}'`,
-  });
-
+  const relevantDocuments = await similaritySearchVectorWithScore(query, 10);
   return relevantDocuments;
 };
