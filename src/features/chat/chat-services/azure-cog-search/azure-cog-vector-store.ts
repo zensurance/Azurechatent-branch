@@ -275,7 +275,7 @@ const AZURE_SEARCH_INDEX = {
   vectorSearch: {
     algorithmConfigurations: [
       {
-        name: "vectorConfig",
+        name: "ZeedAI-Vector-Profile-v1",
         kind: "hnsw",
       },
     ],
