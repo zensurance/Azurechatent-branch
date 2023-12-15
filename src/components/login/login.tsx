@@ -27,7 +27,6 @@ export const LogIn = () => {
       </CardHeader>
       <CardContent className="grid gap-4">
         <Button onClick={() => signIn("azure-ad")}> Microsoft 365</Button>
-        <Button onClick={() => signIn("azure-ad-gcch")}> Microsoft 365 GCC High</Button>
         {process.env.NODE_ENV === "development" && (
           <Button onClick={() => signIn("localdev")}>Basic Auth (DEV ONLY)</Button>
         )}
