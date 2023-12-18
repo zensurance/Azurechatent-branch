@@ -1,10 +1,12 @@
 import NextAuth, { NextAuthOptions } from "next-auth";
 import { Provider } from "next-auth/providers";
 import AzureADProvider from "next-auth/providers/azure-ad";
-import AzureADGCCHProvider from "./providers/azure-ad-gcch";
+//import AzureADGCCHProvider from "./providers/azure-ad-gcch";
 //import GitHubProvider from "next-auth/providers/github";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { hashValue } from "./helpers";
+import GoogleProvider from "next-auth/providers/google";
+
 
 const configureIdentityProvider = () => {
   const providers: Array<Provider> = [];
@@ -51,7 +53,9 @@ const configureIdentityProvider = () => {
     );
   }
 
-  if (
+
+
+  /*if (
     process.env.AZURE_AD_GCCH_CLIENT_ID &&
     process.env.AZURE_AD_GCCH_CLIENT_SECRET &&
     process.env.AZURE_AD_GCCH_TENANT_ID
@@ -73,7 +77,7 @@ const configureIdentityProvider = () => {
         }
       })
     );
-  }
+  }*/
 
   // If we're in local dev, add a basic credential provider option as well
   // (Useful when a dev doesn't have access to create app registration in their tenant)
